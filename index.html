@@ -13,7 +13,7 @@
 
   <body>
     <div class="header-wrapper">
-      <header class="flex centralizer">
+      <header class="main-header flex centralizer">
         <h1 class="logo">
           <a href="#">Theyalow</a>
         </h1>
@@ -25,18 +25,23 @@
           </ul>
         </nav>
       </header>
-      <div class="banner-wrapper centralizer">
-        <div class="flex">
-          <video src="#" poster="./assets/img/video-banner-placeholder.jpg" controls>
-          </video>
-          <p>The Cool the Minimal</p>
-        </div>
-        <button class="previous-button">Previous</button>
-        <button class="next-button">Next</button>
-      </div>
     </div>
-
+    
     <main>
+      <div class="banner-wrapper">
+        <section class="banner flex centralizer">
+          <div class="video-wrapper">
+            <video src="#" poster="./assets/img/video-banner-placeholder.jpg" controls>
+            </video>
+          </div>
+          <h2 class="slogan"><span class="first-text-line">The Cool</span> the Minimal</h2>
+        </section>
+        <div class="button-container flex">
+          <button class="previous-button" aria-label="previous-button"></button>
+          <button class="next-button" aria-label="next-button"></button>
+        </div>
+      </div>
+      
       <section class="features">
         <h2 class="visually-hidden">Features</h2>
         <ul class="list">

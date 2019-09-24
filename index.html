@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/fonts.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <title>Theyalow</title>
   </head>
 
   <body>
     <div class="header-wrapper">
-      <header>
+      <header class="flex centralizer">
         <h1 class="logo">
           <a href="#">Theyalow</a>
         </h1>
         <nav class="main-navigation">
-          <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="list flex ">
+            <li class="about-item"><a href="#">About us</a></li>
+            <li class="services-item"><a href="#">Services</a></li>
+            <li class="contact-item"><a href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
-      <div class="banner-wrapper">
-        <video src="#" poster="./assets/video-banner-placeholder.jpg" controls >
-        </video>
-        <p>The Cool the Minimal</p>
+      <div class="banner-wrapper centralizer">
+        <div class="flex">
+          <video src="#" poster="./assets/img/video-banner-placeholder.jpg" controls>
+          </video>
+          <p>The Cool the Minimal</p>
+        </div>
         <button class="previous-button">Previous</button>
         <button class="next-button">Next</button>
       </div>
@@ -36,7 +39,7 @@
     <main>
       <section class="features">
         <h2 class="visually-hidden">Features</h2>
-        <ul>
+        <ul class="list">
           <li><a href="#">Better Design</a></li>
           <li><a href="#">Customize</a></li>
           <li><a href="#">It`s Free</a></li>
@@ -61,7 +64,7 @@
                 </p>
               </div>
               <div class="video-box">
-                <video src="#" poster="./assets/video-scroll-placeholder.jpg" controls></video>
+                <video src="#" poster="./assets/img/video-scroll-placeholder.jpg" controls></video>
               </div>
             </article>
           </div>
@@ -69,7 +72,7 @@
           <div class="right-scroll">
             <span class="social-comments">22</span><br>
             <div class="mobile_chat">
-              <ul class="comments-list">
+              <ul class="list comments-list">
                 <li>
                   <p class="comment">Daily Mobile UI Design Inspiration #1</p>
                   <span class="author">via @cssauthor</span>
@@ -107,7 +110,7 @@
             <span class="picture-3"></span>
           </div>
           <div class="list-box">
-            <ul>
+            <ul class="list">
               <li>Sed ut perspiciatis unde omnis</li>
               <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
               <li>Sed ut perspiciatis unde omnis</li>

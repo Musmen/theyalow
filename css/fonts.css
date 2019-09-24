@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Lucida Sans";
+  src: url("../assets/fonts/LucidaSans-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Segoe WP";
+  src: url("../assets/fonts/SegoeWP.woff2") format("woff2");
+}

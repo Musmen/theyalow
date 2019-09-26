@@ -8,6 +8,23 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}       
+
 .centralizer {
   box-sizing: border-box;
   width: 1040px;
@@ -33,7 +50,7 @@ a {
   min-height: 566px;
   padding-top: 28px;
   
-  background-image: url("../assets/img/head_bg.png");
+  background-image: url("../assets/img/head-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -231,13 +248,15 @@ nav.main-navigation::after {
 
 /* -------------------------------- main -------------------------------- */
 
+/* -------------------------------- banner -------------------------------- */
+
 .banner-wrapper {
   min-height: 398px;
   margin-top: -398px;
 }
 
 .video-wrapper {
-  /* position: relative; */
+  /* position: relative; */      /* TODO: Fix yellow background or export poster with same effect...*/
 
   width: 549px;
   height: 327px;
@@ -300,4 +319,84 @@ nav.main-navigation::after {
   transform: rotate(180deg);
 
   opacity: 1;
+}
+
+/* -------------------------------- features -------------------------------- */
+
+.features-wrapper {
+  background-image: url("../assets/img/features-bg.png");
+}
+
+.features .features-list {
+  /* justify-content: space-between; */
+  align-items: stretch;
+}
+
+.features-list a {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 212px;
+  padding-top: 146px;
+
+  font-size: 27.05px;
+  font-weight: 300;
+  font-family: "Segoe UI", Verdana, sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  
+  border-left: 1px solid #cfcfcf;
+}
+
+.features-list li:last-of-type a {
+  border-right: 1px solid #cfcfcf;
+}
+
+.features-list .design a {
+  width: 341px;
+  margin-left: -1px;
+  padding-left: 19px;
+
+  background-image: url("../assets/img/features-cloud.svg");
+  background-repeat: no-repeat;
+  background-position: 113px 61px;
+}
+
+.features-list .design a:focus,
+.features-list .design a:hover,
+.features-list .design a:active {
+  background-image: url("../assets/img/features-cloud-hover.svg");
+}
+
+.features-list .customise a {
+  width: 341px;
+  padding-left: 18px;
+
+  background-image: url("../assets/img/features-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 135px 37px;
+}
+
+.features-list .customise a:focus,
+.features-list .customise a:hover,
+.features-list .customise a:active {
+  background-image: url("../assets/img/features-leaf-hover.svg");
+}
+
+.features-list .price a {
+  width: 341px;
+  margin-left: -2px;
+  padding-right: 14px;
+
+  background-image: url("../assets/img/features-plane.svg");
+  background-repeat: no-repeat;
+  background-position: 119px 54px;
+}
+
+.features-list .price a:focus,
+.features-list .price a:hover,
+.features-list .price a:active {
+  background-image: url("../assets/img/features-plane-hover.svg");
 }

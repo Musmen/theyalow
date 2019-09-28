@@ -45,7 +45,7 @@ a {
 
 /* ------------------------------ header ------------------------------ */
 
-.header-wrapper {
+.header-and-banner-container {
   box-sizing: border-box;
   min-height: 566px;
   padding-top: 28px;
@@ -55,7 +55,7 @@ a {
   background-size: cover;
 }
 
-.header-wrapper .main-header {
+.header-and-banner-container .main-header {
   justify-content: space-between;
   align-items: center;
 
@@ -97,6 +97,12 @@ a {
   background-repeat: no-repeat;
 }
 
+.header-logo .logo-link:focus,
+.header-logo .logo-link:hover,
+.header-logo .logo-link:active {
+  color: #f5c505;
+}
+
 .main-navigation {
   position: relative;
   top: 1px;
@@ -106,7 +112,7 @@ a {
   width: 453px;
   min-height: 41px;
   
-  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+  background-color: #f5c505;
 }
 
 nav.main-navigation::before {
@@ -250,12 +256,12 @@ nav.main-navigation::after {
 
 /* ------------------------------ banner ------------------------------ */
 
-.banner-wrapper {
+.banner-container {
   min-height: 398px;
-  margin-top: -398px;
+  margin-top: 57px;
 }
 
-.video-wrapper {
+.video-container {
   /* position: relative; */      /* TODO: Fix yellow background or export poster with same effect...*/
 
   width: 549px;
@@ -323,7 +329,7 @@ nav.main-navigation::after {
 
 /* ----------------------------- features ----------------------------- */
 
-.features-wrapper {
+.features-container {
   background-image: url("../assets/img/features-bg.png");
 }
 
@@ -547,7 +553,7 @@ nav.main-navigation::after {
 
 /* ---------------------------- slider --------------------------- */
 
-.description .slider-wrapper {
+.description .slider-container {
   box-sizing: border-box;
   width: 896px;
   height: 15px;
@@ -761,7 +767,7 @@ nav.main-navigation::after {
 
 /* ---------------------------- footer --------------------------- */
 
-.footer-wrapper {
+.footer-container {
   min-height: 64px;
 
   background-color: #4c4c4c;

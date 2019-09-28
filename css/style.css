@@ -43,7 +43,7 @@ a {
   display: flex;
 }
 
-/* -------------------------------- header -------------------------------- */
+/* ------------------------------ header ------------------------------ */
 
 .header-wrapper {
   box-sizing: border-box;
@@ -246,9 +246,9 @@ nav.main-navigation::after {
   background-repeat: no-repeat;
 }
 
-/* -------------------------------- main -------------------------------- */
+/* ------------------------------- main ------------------------------- */
 
-/* -------------------------------- banner -------------------------------- */
+/* ------------------------------ banner ------------------------------ */
 
 .banner-wrapper {
   min-height: 398px;
@@ -321,7 +321,7 @@ nav.main-navigation::after {
   opacity: 1;
 }
 
-/* -------------------------------- features -------------------------------- */
+/* ----------------------------- features ----------------------------- */
 
 .features-wrapper {
   background-image: url("../assets/img/features-bg.png");
@@ -340,7 +340,7 @@ nav.main-navigation::after {
 
   font-size: 27.05px;
   font-weight: 300;
-  font-family: "Segoe UI", Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, sans-serif;
   letter-spacing: 0.01em;
   line-height: 1.2;
   text-transform: uppercase;
@@ -399,4 +399,215 @@ nav.main-navigation::after {
 .features-list .price a:hover,
 .features-list .price a:active {
   background-image: url("../assets/img/features-plane-hover.svg");
+}
+
+/* ---------------------------- description --------------------------- */
+
+.description-container {
+  min-height: 509px;
+
+  background-image: url("../assets/img/description-bg.png");
+}
+
+.post-container {
+  align-items: center;
+  margin-bottom: 43px;
+}
+
+.post-article .article-title {
+  margin: 0;
+
+  font-size: 37.05px;
+  font-weight: 400;
+  font-family: "PTSans", "Century Gothic", sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 110px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
+}
+
+.post-article .article-content {
+  width: 656px;
+  min-height: 233px;
+
+  font-size: 0;
+  
+  background-color: #ec9e03;
+}
+
+.post-article .article-text {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 341px;
+  margin: 15px 0 0 30px;
+
+  font-size: 29.05px;
+  font-weight: 300;
+  font-family: "Segoe WP", "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 1.31;
+  text-align: left;
+  color: #ffffff;
+}
+
+.post-article .article-video {
+  width: 315px;
+}
+
+.post-article .article-link,
+.social-container .twitter-link {
+  position: absolute;
+  right: 15px;
+  bottom: 13px;
+
+  display: inline-block;
+  width: 11px;
+  min-height: 11px;
+
+  background-image: url("../assets/img/description-plus.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  opacity: 0.7;
+}
+
+.post-article .article-date {
+  display: block;
+  width: 113px;
+  height: 86px;
+
+  text-align: center; 
+  
+  background-color: #ddb101;
+}
+
+.article-date .day {
+  display: inline-block;
+  width: 100%;
+  padding-top: 2px;
+  padding-left: 2px;
+
+  font-size: 51.05px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.article-date .month {
+  display: inline-block;
+  width: 100%;
+  margin-top: -4px;
+  padding-left: 2px;
+
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #b26529;
+}
+
+.description-container .social-container {
+  position: relative;
+
+  width: 329px;
+  min-height: 233px;
+  margin-top: 23px;
+  margin-left: 33px;
+
+  background-color: #ec9e03;
+  background-image: url("../assets/img/twitter-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center 59px;
+}
+
+.social-container .social-comments {
+  position: absolute;
+  top: 9px;
+  right: 17px;
+
+  font-size: 25.05px;
+  font-weight: 300;
+  font-family: "Segoe WP", "Segoe UI", sans-serif;
+  line-height: 1.517;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.social-container .twitter-link {
+  right: 9px;
+}
+
+.social-container .mobile-chat {
+  display: none;
+}
+
+/* ---------------------------- slider --------------------------- */
+
+.description .slider-wrapper {
+  box-sizing: border-box;
+  width: 896px;
+  height: 15px;
+  margin: 0;
+  margin-left: 73px;
+}
+
+.slider {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+.slider:focus {
+  outline: none; /* Removes the blue border */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+
+  box-sizing: border-box;
+  width: 197px;
+  height: 15px;
+
+  background-color: #ec9e03;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb { /*  TODO: Test this feature in Mozilla */
+  box-sizing: border-box;
+  width: 197px;
+  height: 15px;
+
+  background-color: #ec9e03;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.slider:focus::-webkit-slider-runnable-track {
+  background-color: red;   /*  TODO!!!!!!!!!!!!!!!!!!! */
+  border-radius: 10px;
+}
+
+.slider::-webkit-slider-runnable-track {
+  background-color: rgba(255, 255, 255, 0.48);
+  border-radius: 10px;
+  
+  cursor: pointer;
+}
+
+.slider:focus::-webkit-slider-runnable-track {
+  background: #367ebd; /*  TODO!!!!!!!!!!!!!!!!!!! */
+}
+
+.slider::-moz-range-track {
+  background-color: rgba(255, 255, 255, 0.48);
+  border-radius: 10px;
+  
+  cursor: pointer;
 }

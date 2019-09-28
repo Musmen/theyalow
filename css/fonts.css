@@ -10,6 +10,12 @@
 }
 
 @font-face {
+  font-family: "Segoe WP";
+  src: url("../assets/fonts/SegoeWP-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
   font-family: "Asap";
   src: url("../assets/fonts/Asap-Regular.woff2") format("woff2");
 }
@@ -18,4 +24,22 @@
   font-family: "Segoe UI";
   src: url("../assets/fonts/SegoeUI-Light.woff2") format("woff2");
   font-weight: 300;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../assets/fonts/SegoeUI.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../assets/fonts/SegoeUI-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../assets/fonts/PTSans-Regular.woff2") format("woff2");
+  font-weight: 400;
 }

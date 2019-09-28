@@ -184,9 +184,9 @@ a {
   outline: 1px solid #ffffff;
 }
 
-.navigation-link:focus .icon .shp0,
-.navigation-link:hover .icon .shp0,
-.navigation-link:active .icon .shp0{
+.navigation-link:focus path,
+.navigation-link:hover path,
+.navigation-link:active path{
   fill: #ffffff;
 }
 

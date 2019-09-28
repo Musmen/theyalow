@@ -43,3 +43,15 @@
   src: url("../assets/fonts/PTSans-Regular.woff2") format("woff2");
   font-weight: 400;
 }
+
+@font-face {
+  font-family: "PTSans NarrowBold";
+  src: url("../assets/fonts/PTSans-NarrowBold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/fonts/opensans.woff2") format("woff2");
+  font-weight: 400;
+}

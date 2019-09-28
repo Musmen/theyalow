@@ -50,7 +50,8 @@
       <div class="banner-container">
         <section class="banner flex centralizer">
           <div class="video-container">
-            <video class="video" src="#" poster="./assets/img/video-banner-placeholder.jpg" controls>
+            <video class="video" src="#" poster="./assets/img/video-banner-placeholder.jpg" width="549" height="327" controls>
+              You browser does not support HTML5 video
             </video>
           </div>
           <h2 class="slogan"><span class="first-text-line">The Cool</span> the Minimal</h2>
@@ -67,9 +68,15 @@
         <section class="features centralizer">
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-list list flex">
-            <li class="design"><a href="#">Better Design</a></li>
-            <li class="customise"><a href="#">Customise</a></li>
-            <li class="price"><a href="#">Its Free</a></li>
+            <li class="features-item design">
+              <a class="features-link" href="#">Better Design</a>
+            </li>
+            <li class="features-item customize">
+              <a class="features-link" href="#">Customise</a>
+            </li>
+            <li class="features-item price">
+              <a class="features-link" href="#">Its Free</a>
+            </li>
           </ul>
         </section>
       </div>
@@ -78,54 +85,55 @@
         <section class="description centralizer">
           <h2 class="visually-hidden">Description</h2>
           
-            <div class="post-container flex">
-              <article class="post-article">
-                <h3 class="article-title">Lorem ipsum dolor sit amet</h3>
-                <div class="article-content flex">
-                  <p class="article-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci&shy;didunt ut
-                    <a class="article-link" href="#" aria-label=""></a>
-                  </p>
-                  <div class="article-video-container">
-                    <video class="article-video" src="#" poster="./assets/img/video-scroll-placeholder.jpg" controls></video>
-                  </div>
+          <div class="post-container flex">
+            <article class="post-article">
+              <h3 class="article-title">Lorem ipsum dolor sit amet</h3>
+              <div class="article-content flex">
+                <p class="article-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci&shy;didunt ut
+                  <a class="article-link" href="#" aria-label="Get more about this"></a>
+                </p>
+                <div class="article-video-container">
+                  <video class="article-video" src="#" poster="./assets/img/video-scroll-placeholder.jpg" width="315" height="233" controls>
+                    You browser does not support HTML5 video
+                  </video>
                 </div>
-                <time class="article-date" datetime="2019-04-25">
-                  <span class="day">25</span>
-                  <span class="month">April</span>
-                </time>
-              </article>
-              
-              <div class="social-container">
-                <span class="social-comments">22</span><br>
-                <div class="mobile-chat">
-                  <ul class="list comments-list">
-                    <li>
-                      <p class="comment">Daily Mobile UI Design Inspiration #1</p>
-                      <span class="author">via @cssauthor</span>
-                    </li>
-                    <li>
-                      <p class="comment">Daily Mobile UI Design Inspiration #1</p>
-                      <span class="author">via @cssauthor</span>
-                    </li>
-                    <li>
-                      <p class="comment">Daily Mobile UI Design Inspiration #1</p>
-                      <span class="author">via @cssauthor</span>
-                    </li>
-                  </ul>
-                  <form action="#">  <!-- action="???" method="???" -->
-                    <input type="text" name="twit-comment">
-                    <input type="submit" value="Tweet">
-                  </form>
-                </div>
-                <a class="twitter-link" href="#" aria-label=""></a>
               </div>
+              <time class="article-date" datetime="2019-04-25">
+                <span class="day">25</span>
+                <span class="month">April</span>
+              </time>
+            </article>
+            
+            <div class="social-container">
+              <span class="social-comments">22</span><br>
+              <div class="mobile-chat">
+                <ul class="list comments-list">
+                  <li>
+                    <p class="comment">Daily Mobile UI Design Inspiration #1</p>
+                    <span class="author">via @cssauthor</span>
+                  </li>
+                  <li>
+                    <p class="comment">Daily Mobile UI Design Inspiration #1</p>
+                    <span class="author">via @cssauthor</span>
+                  </li>
+                  <li>
+                    <p class="comment">Daily Mobile UI Design Inspiration #1</p>
+                    <span class="author">via @cssauthor</span>
+                  </li>
+                </ul>
+                <form action="#">
+                  <input type="text" name="twit-comment">
+                  <input type="submit" value="Tweet">
+                </form>
+              </div>
+              <a class="twitter-link" href="#" aria-label="Twitter chat"></a>
             </div>
+          </div>
             
           <div class="slider-container">
             <input class="slider" type="range" min="1" max="4" value="2" step="1.063">
           </div>
-
         </section>
       </div>
 
@@ -155,4 +163,6 @@
         <a class="logo-link" href="#">Theyalow</a>
       </footer>
     </div>
+
+  </body>
 </html>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="81" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 83" height="83">
+<svg width="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11" height="11">
  <metadata>
   <x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        " xmlns:x="adobe:ns:meta/">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -9,9 +9,10 @@
  </metadata>
  <defs>
   <style>.cls-1 {
-        fill: #f5c506;
+        fill: #fff;
         fill-rule: evenodd;
+        opacity: 0.7;
       }</style>
  </defs>
- <path transform="translate(-939 -620)" class="cls-1" d="m998.23 670.81v24.145l-10.538-13.674-21.86 21.71-26.83-83 81 29.176zm-51.637-42.925 46.068 48.458 5.4-5.365z"/>
+ <path transform="translate(-455 -1097)" class="cls-1" d="m466 1104h-4v4h-3v-4h-4v-3h4v-4h3v4h4v3z"/>
 </svg>

@@ -1,47 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="88" viewBox="0 0 81 88">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 81 88" width="81" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="88">
+ <metadata>
+  <x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        " xmlns:x="adobe:ns:meta/">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
+    <rdf:Description rdf:about=""/>
    </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
+  </x:xmpmeta>
+ </metadata>
+ <defs>
+  <style>.cls-1 {
         fill: #f5c506;
         fill-rule: evenodd;
         filter: url(#filter);
-      }
-    </style>
-    <filter id="filter" x="939" y="620" width="81" height="88" filterUnits="userSpaceOnUse">
-      <feOffset result="offset" dy="5" in="SourceAlpha"/>
-      <feGaussianBlur result="blur"/>
-      <feFlood result="flood" flood-color="#b99401" flood-opacity="0.69"/>
-      <feComposite result="composite" operator="in" in2="blur"/>
-      <feBlend result="blend" in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <path class="cls-1" d="M998.231,670.806v24.145l-10.538-13.674L965.831,703,939,620l81,29.176Zm-51.637-42.925,46.068,48.458,5.4-5.365Z" transform="translate(-939 -620)"/>
+      }</style>
+  <filter id="filter" height="88" width="81" y="620" x="939" filterUnits="userSpaceOnUse">
+   <feOffset in="SourceAlpha" result="offset" dy="5"/>
+   <feGaussianBlur result="blur"/>
+   <feFlood flood-opacity=".69" result="flood" flood-color="#b99401"/>
+   <feComposite operator="in" result="composite" in2="blur"/>
+   <feBlend result="blend" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <path transform="translate(-939 -620)" class="cls-1" d="m998.23 670.81v24.145l-10.538-13.674-21.86 21.71-26.83-83 81 29.176zm-51.637-42.925 46.068 48.458 5.4-5.365z"/>
 </svg>

@@ -190,8 +190,6 @@ a {
   fill: #ffffff;
 }
 
-/* ------------------------------- main ------------------------------- */
-
 /* ------------------------------ banner ------------------------------ */
 
 .banner-container {
@@ -200,28 +198,29 @@ a {
 }
 
 .video-container {
-  /* position: relative; */      /* TODO: Fix yellow background or export poster with same effect...*/
-
   width: 549px;
   height: 327px;
   margin-left: 10px;
 
-  /* background-color: #f5c506; */
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-
-  /* z-index: 5; */
 }
 
-.banner video {
+.banner .video {
   width: 549px;
   height: 327px;
+}
+
+.banner .video:focus,
+.banner .video:hover,
+.banner .video:active {
+  outline: 1px solid #ffffff;
 }
 
 .banner .slogan {
   width: 408px;
   margin: 0;
   margin-left: 43px;
-  padding-top: 80px;
+  padding-top: 79px;
 
   font-size: 63.05px;
   font-weight: 400;
@@ -234,41 +233,53 @@ a {
 
 .slogan .first-text-line {
   position: relative;
-  top: -5px;
+  top: -4px;
   left: -8px;
 
   color: #f5c506;
 }
 
 .button-container {
+  position: relative;
+  top: -195px;
+
   justify-content: space-between;
-  
-  margin-top: -195px;
 }
 
-.button-container button {
-  width: 32px;
+.button-container .button {
+  width: 34px;
   height: 57px;
   padding: 0;
 
-  background-color: #f5c506;
+  background-color: rgba(245, 197, 6, 0.71);
   background-image: url("../assets/img/banner-button.svg");
-  background-position: 8px center;
   background-repeat: no-repeat;
+  background-position: 10px center;
   border: none;
-  opacity: 0.71;
 }
 
-.button-container button.next-button {
+.button-container .next-button {
+  width: 33px;
+
+  background-color: rgba(245, 197, 6, 1);
+  background-position: 9px 20px;
+
   transform: rotate(180deg);
-
-  opacity: 1;
 }
+
+.button-container .button:focus,
+.button-container .button:hover,
+.button-container .button:active {
+  outline: 1px solid #ffffff;
+}
+
+/* ------------------------------- main ------------------------------- */
 
 /* ----------------------------- features ----------------------------- */
 
 .features-container {
   background-image: url("../assets/img/features-bg.png");
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .features .features-list {

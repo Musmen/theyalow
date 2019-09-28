@@ -28,8 +28,8 @@ a {
 .centralizer {
   box-sizing: border-box;
   width: 1040px;
-  padding: 0 10px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .list {
@@ -67,10 +67,12 @@ a {
 }
 
 .header-logo .logo-link {
-  margin-left: 92px;
   position: relative;
   top: 5px;
   left: -5px;
+  
+  margin-left: 92px;
+  padding-right: 10px;
 
   font-style: italic;
   font-size: 41.05px;
@@ -97,6 +99,10 @@ a {
   background-repeat: no-repeat;
 }
 
+.header-logo .logo-link:focus {
+  outline: 1px solid white;
+}
+
 .header-logo .logo-link:focus,
 .header-logo .logo-link:hover,
 .header-logo .logo-link:active {
@@ -108,148 +114,80 @@ a {
   top: 1px;
 
   align-self: flex-end;
-
   width: 453px;
   min-height: 41px;
-  
-  background-color: #f5c505;
+
+  background-color: rgba(245, 197, 6, 1);
+  box-shadow: -4px -5px 0px 0px  rgba(245, 197, 6, 0.27),
+              -8px -8px 0px 0px  rgba(245, 197, 6, 0.27);
 }
 
-nav.main-navigation::before {
-  position: absolute;
-  top: -5px;
-  left: -4px;
-
-  display: block;
-  width: 453px;
-  min-height: 41px;
-   
-  content: ""; 
-
-  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
-  
-  opacity: 0.27;
-}
-
-nav.main-navigation::after {
-  position: absolute;
-  top: -8px;
-  left: -8px;
-
-  display: block;
-  width: 453px;
-  min-height: 41px;
-   
-  content: ""; 
-
-  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
-  
-  opacity: 0.27;
-}
-
-.main-navigation a {
+.main-navigation .navigation-link {
   position: relative;
   
-  display: flex;
+  display: inline-block;
   box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
   min-height: 41px;
 
   font-size: 17.05px;
   font-weight: 400;
+  line-height: 41px;
   font-family: "Segoe WP", "Segoe UI", sans-serif;
   letter-spacing: 0.01em;
+  text-align: center;
   text-transform: uppercase;
   color: #9b7d08;
 
-  z-index: 2;
+  border-right: 1px solid rgba(220, 177, 5, 1);
 }
 
-.main-navigation .about-item a {
-  padding-left: 47px;
+.contact-item .navigation-link {
+  border: none;
+}
 
+.about-item .about-icon {
+  position: relative;
+  top: 3px;
+  left: -4px;
+}
+
+.about-item .navigation-link {
   width: 173px;
+  padding-left: 21px; 
 }
 
-.main-navigation .about-item a::before {
-  position: absolute;
-  top: 10px;
-  left: 38px;
-
-  width: 22px;
-  min-height: 20px;
-
-  content: "";
-
-  background-image: url("../assets/img/about-nav.svg");
-  background-repeat: no-repeat;
+.services-item  .services-icon {
+  position: relative;
+  top: 3px;
+  left: -4px;
 }
 
-.main-navigation .about-item a::after {
-  position: absolute;
-  right: 0;
-
-  width: 1px;
-  min-height: 40px;
-
-  content: "";
-
-  background-image: url("../assets/img/line-nav.svg");
-  background-repeat: no-repeat;
-}
-
-.main-navigation .services-item a {
-  padding-left: 24px;
-
+.services-item .navigation-link {
   width: 133px;
 }
 
-.main-navigation .services-item a::before {
-  position: absolute;
-  top: 10px;
-  left: 13px;
-
-  width: 20px;
-  min-height: 20px;
-
-  content: "";
-
-  background-image: url("../assets/img/services-nav.svg");
-  background-repeat: no-repeat;
+.contact-item .contact-icon {
+  position: relative;
+  top: 2px;
+  left: -4px;
 }
 
-.main-navigation .services-item a::after {
-  position: absolute;
-  right: 0;
-
-  width: 1px;
-  min-height: 40px;
-
-  content: "";
-
-  background-image: url("../assets/img/line-nav.svg");
-  background-repeat: no-repeat;
-}
-
-.main-navigation .contact-item a {
-  padding-left: 28px;
-
+.contact-item .navigation-link {
   width: 147px;
 }
 
-.main-navigation .contact-item a::before {
-  position: absolute;
-  top: 10px;
-  left: 16px;
+.main-navigation .navigation-link:focus,
+.main-navigation .navigation-link:hover,
+.main-navigation .navigation-link:active {
+  color: #ffffff;
 
-  width: 25px;
-  min-height: 19px;
+  outline: 1px solid #ffffff;
+}
 
-  content: "";
-
-  background-image: url("../assets/img/contacts-nav.svg");
-  background-repeat: no-repeat;
+.navigation-link:focus .icon .shp0,
+.navigation-link:hover .icon .shp0,
+.navigation-link:active .icon .shp0{
+  fill: #ffffff;
 }
 
 /* ------------------------------- main ------------------------------- */

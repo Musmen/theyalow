@@ -1015,7 +1015,7 @@ a {
   .banner .video:focus,
   .banner .video:hover,
   .banner .video:active {
-    outline: 1px solid #ffffff;
+    outline: 1px solid #ec9e03;
   }
   
   .banner .slogan {
@@ -1084,9 +1084,45 @@ a {
   /* ------------------------ mobile-features ------------------------ */
   
   .features-container {
+    position: relative;
     /* background-image: url("../assets/img/features-bg.png"); */
     /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); */
     box-shadow: none;
+    /* filter: drop-shadow(0 0 -5px rgba(255, 255, 255, 1)); */
+  }
+
+  .features-container::before {
+    position: absolute;
+    
+    top: -9px;
+
+    display: block;
+    width: 100%;
+    height: 9px;
+
+    background-image: url("../assets/img/features-bg.png"); 
+
+    opacity: 0.4;
+
+    content: "";
+    z-index: 2;
+  }
+
+  .features-container::after {
+    position: absolute;
+    
+    top: -4px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background-image: url("../assets/img/features-bg.png"); 
+
+    opacity: 0.4;
+
+    content: "";
+    z-index: 3;
   }
   
   /* .features .features-list {
@@ -1387,7 +1423,7 @@ a {
     /* right: 9px; */
   }
   
-  .social-container .mobile-chat { /* TODO!!!!!!! */
+  .social-container .mobile-chat {
     display: block;
     margin-left: 100px;
     /* width: 100%; */
@@ -1395,10 +1431,105 @@ a {
     /* display: none; */
   }
 
-  .mobile-chat .comment {
+  .mobile-chat {
+    padding-left: 224px;
+  }
+
+  .mobile-chat .comments-list-item {
+    /* display: inline-block; */
+    box-sizing: border-box;
+    width: 284px;
+    height: 42px;
     margin: 0;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    padding-top: 6px;
+    padding-left: 28px;
+        
+    /* background-color: #ffffff; */
+    background-image: url("../assets/img/bubble.svg");
+    background-repeat: no-repeat;
   }
   
+  .mobile-chat .comments-list-item:nth-child(2) {
+    opacity: 0.7;
+  }
+
+  .mobile-chat .comments-list-item:nth-child(3) {
+    opacity: 0.6;
+
+    /* margin-bottom: 13px; */
+  }
+
+  .mobile-chat .comment,
+  .mobile-chat .author {
+    margin: 0;
+
+    font-size: 13.05px;
+    font-weight: 400;
+    font-family: "Arial", "Helvetica", sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #8f8e8e;    
+  }
+
+  .mobile-chat .twitter-form {
+    padding-left: 13px;
+    
+    font-size: 0;
+  }
+
+  .twitter-form .twitter-comment-input {
+    box-sizing: border-box;
+    width: 201px;
+    min-height: 29px;
+    padding: 0;
+
+    border: 1px solid rgba(208, 168, 6, 0.15);
+    border-radius: 10px 0 0 10px;
+    border-style: outset;
+    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.11);
+    
+    overflow: hidden;
+  }
+
+  .twitter-form .twitter-submit-button {
+    box-sizing: border-box;
+    width: 70px;
+    min-height: 29px;
+    padding: 0;
+
+    font-size: 15.05px;
+    font-weight: 400;
+    font-family: "Arial", "Helvetica", sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #de9d1b;
+    background-image: linear-gradient(180deg, #eaa927 0%, #cf8e0c 100%);;
+    border: 1px solid rgba(208, 168, 6, 0.15);
+    border-radius: 0 10px 10px 0;
+    border-style: outset;
+  }
+
+  .twitter-form .twitter-comment-input:focus,
+  .twitter-form .twitter-comment-input:hover,
+  .twitter-form .twitter-comment-input:active {
+    border: 1px solid #474747;
+
+    outline: none;
+  }
+
+  .twitter-form .twitter-submit-button:focus,
+  .twitter-form .twitter-submit-button:hover,
+  .twitter-form .twitter-submit-button:active {
+    border: 1px solid #474747;
+
+    outline: none;
+  }
+
   /* -------------------------- mobile-slider ------------------------- */
   
   .description .slider-container {
